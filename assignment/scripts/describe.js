@@ -26,9 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// We create a variable called name and assign it the string value 'Dane'
+// We check to see if the name variable is Mary (matching exactly), but it is not, so 
+// we console log 'How do you do?'
 //
 
 //CODE
@@ -45,10 +45,12 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a variable called secret. We also create a variable called code and assign it the number 123
+// Then we check to see if the variable code is 123, which it is, which then assigns the variable secret
+// to be the string value 'super'. Additionally, since the conditional is true, code is now changed to be  
+// double its original value, or 246.
+// Next, code is checked to see if it is greater than 250, which it is not. Therefore the variable secret
+// does not change its value.  Then we console.log secret which produces 'super'
 
 //CODE
 /*
@@ -70,10 +72,12 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create the variable isStudent as a Boolean value of true, the variable age as a number value 34
+// and the variable zip as the number 55407.
+// Next, we check to see if isStudent is true AND if zip is greater than 80000. Only one of those is true
+// so we move onto the else if.  The else if checks to see if isStudent is false OR if age is less than 30.
+// Both of those are false so we move to the next else if which checks if isStudent is true.  It is, so
+// we now console log 'Welcome to Prime' and the process is complete.
 
 //CODE
 /*
