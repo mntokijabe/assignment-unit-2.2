@@ -46,8 +46,8 @@ if (name === 'Mary') {
 
 // 2. WRITE YOUR DESCRIPTION HERE
 // We create a variable called secret. We also create a variable called code and assign it the number 123
-// Then we check to see if the variable code is 123, which it is, which then assigns the variable secret
-// to be the string value 'super'. Additionally, since the conditional is true, code is now changed to be  
+// Then we check to see if the variable code is 123, which it is, which then assigns the string value 'super'
+// to the variable secret. Additionally, since the conditional is true, code is now changed to be  
 // double its original value, or 246.
 // Next, code is checked to see if it is greater than 250, which it is not. Therefore the variable secret
 // does not change its value.  Then we console.log secret which produces 'super'
@@ -75,9 +75,9 @@ console.log(secret)
 // We create the variable isStudent as a Boolean value of true, the variable age as a number value 34
 // and the variable zip as the number 55407.
 // Next, we check to see if isStudent is true AND if zip is greater than 80000. Only one of those is true
-// so we move onto the else if.  The else if checks to see if isStudent is false OR if age is less than 30.
+// so we move onto the first else if.  The else if checks to see if isStudent is false OR if age is less than 30.
 // Both of those are false so we move to the next else if which checks if isStudent is true.  It is, so
-// we now console log 'Welcome to Prime' and the process is complete.
+// we now console log 'Welcome to Prime' and the process is complete, ignoring the final else.
 
 //CODE
 /*
@@ -134,12 +134,15 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - the strings of colorOne and colorTwo are reversed, so we have to switch those assignments
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
 if (mix === true) {
-  colorOne = 'purple';
+
+//FIX - only colorOne is reset to purple. We also have to set colorTwo to 'purple'
+colorOne = 'purple';
 }
 */
 
@@ -149,8 +152,11 @@ if (mix === true) {
 
 /*
 let temp = 40;
+
+// FIX - time is created as a constant. We need to use LET to make it a variable.
 const time = 4;
 
+// FIX - this is set up as an OR conditional.  We need to use && instead of ||
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -162,7 +168,17 @@ if (temp > 39 || time >= 4) {
 
 /*
 let age = 21;
+
+// FIX - minAge is set up as a constant.  Though it probably should be, the directions say it's a
+// variable so we need to use let instead of const.
 const minAge = 21;
+
+// FIX - while this is technically set up correctly to see if age is greater than or equal to minAge, 
+// it probably will confuse some who can't read inequalities backwards. It would be advisable to switch it to
+// age >= minAge
+// FIX (required) - because of the switch explained above, the console.log messages are reversed. If we leave the 
+// conditional statement as is we would then need to switch the console.log messages of the if and the else.  OR,
+// we could just do the one recommended switch above instead of changing the two console.log messages.
 
 if(minAge <= age) {
   console.log('no entry');
